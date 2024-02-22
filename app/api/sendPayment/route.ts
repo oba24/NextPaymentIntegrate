@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
   var result = {};
   await axios.post(options.url, body.data, { headers: options.headers })
     .then(r => {
-    result = r.data
+      result = r.data
     })
     .catch(error => {
         result = {}
